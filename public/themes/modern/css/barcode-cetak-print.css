@@ -1,0 +1,21 @@
+body{
+	
+}
+table td {
+	font-family: Poppins, arial, verdana;
+	border: 1px solid #f2f2f2;
+	border-collapse: collapse;
+}
+
+table, tr, td {
+	border-collapse: collapse;
+}
+
+table td .nama-barang {
+	font-size: 14px;
+	max-width:250px;
+	padding: 0 7px;
+	padding-top: 10px;
+	margin-bottom: -3px;
+	text-align: center;
+}
