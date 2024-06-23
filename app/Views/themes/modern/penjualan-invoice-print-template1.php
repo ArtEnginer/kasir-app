@@ -192,24 +192,16 @@ require_once(ROOTPATH . 'app/ThirdParty/TclibBarcode/autoload.php');
 		</div>
 		<div class="logo-container">
 			<div class="identitas-container">
-				<img src="<?= base_url() ?>/public/images/<?= $setting['logo'] ?>" />
 				<div class="detail">
 					<p class="brand-text"><?= $identitas['nama'] ?></p>
-					<p><?= $identitas['alamat'] ?></p>
-					<p><?= $identitas['nama_kelurahan'] . ', ' . $identitas['nama_kecamatan'] ?></p>
-					<p><?= $identitas['nama_kabupaten'] . ', ' . $identitas['nama_propinsi'] ?></p>
 				</div>
-			</div>
-			<div>
-				<?= $bobj->getHtmlDiv() ?>
-				<div class="barcode-text"><?= $order['order']['no_invoice'] ?></div>
 			</div>
 		</div>
 		<div class="invoice-text">
 			<h1>INVOICE</h1>
+			<div class="barcode-text"><?= $order['order']['no_invoice'] ?></div>
 		</div>
 		<div>
-			<h3>Pembeli</h3>
 			<table class="no-border" cellspacing="0" cellpadding="0">
 				<tr>
 					<td>Nama</td>
@@ -232,7 +224,6 @@ require_once(ROOTPATH . 'app/ThirdParty/TclibBarcode/autoload.php');
 			</table>
 		</div>
 		<div class="d-flex-between">
-			<h3>Transaksi</h3>
 			<div>
 				<?php
 				$split = explode(' ', $order['order']['tgl_penjualan']);
